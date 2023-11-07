@@ -1,4 +1,4 @@
-# MarketKit.Swift
+# MarketKit.Swift 
 
 ## Installation
 
