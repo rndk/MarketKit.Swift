@@ -150,9 +150,9 @@ extension CoinSyncer {
 
         Task { [weak self, hsProvider] in
             do {
-                async let coins = try hsProvider.allCoins()
-                async let blockchainRecords = try hsProvider.allBlockchainRecords()
-                async let tokenRecords = try hsProvider.allTokenRecords()
+//                async let coins = try hsProvider.allCoins()
+//                async let blockchainRecords = try hsProvider.allBlockchainRecords()
+//                async let tokenRecords = try hsProvider.allTokenRecords()
 
                 try await self?.handleFetched(coins: coins, blockchainRecords: blockchainRecords, tokenRecords: tokenRecords)
                 self?.saveLastSyncTimestamps(coins: coinsTimestamp, blockchains: blockchainsTimestamp, tokens: tokensTimestamp)
